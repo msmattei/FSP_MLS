@@ -62,6 +62,6 @@ for (gse in mouse_tissue){
   }
   
   tissue_spec_score <- data.frame(Gene.ID = paralog_gene_ID, tissue_spec_score)[complete.cases(data.frame(Gene.ID = paralog_gene_ID, tissue_spec_score)),]
-  write.table(tissue_spec_score, paste0("Result/Mouse/", strsplit(gse, "[.]")[[1]][1], "spec_score", Sys.Date(), ".txt"), col.names = F, row.names = F, quote = F)
+  write.table(tissue_spec_score, paste0("Output/Mouse/", strsplit(gse, "[.]")[[1]][1], "spec_score", Sys.Date(), ".txt"), col.names = F, row.names = F, quote = F)
   
 }
