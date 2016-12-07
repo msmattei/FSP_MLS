@@ -52,7 +52,7 @@ for (gse in mouse_tissue){
   
   tissue_spec_score <- NULL
   for (gene in paralog_gene_ID){
-    x <- NULL
+    gene_expression <- NULL
     for (tiss in names(tissues)){
       rpkm <- mean(tissues[[tiss]]$RPKM_short[tissues[[tiss]]$Ensembl_Gene_ID_short==gene])
       gene_expression <- c(gene_expression,rpkm)
