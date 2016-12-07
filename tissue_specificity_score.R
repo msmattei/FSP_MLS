@@ -48,13 +48,13 @@ mouse_tissue <- list.files("Data/Mouse/")
 
 for (gse in mouse_tissue){
   load(paste0("Data/Mouse/", gse))
-  paralog_gene_ID <- unique(tissues[[1]]$Mouse_Ensembl_Gene_ID_short)
+  paralog_gene_ID <- unique(tissues[[1]]$Ensembl_Gene_ID_short)
   
   tissue_spec_score <- NULL
   for (gene in paralog_gene_ID){
     x <- NULL
     for (tiss in names(tissues)){
-      rpkm <- mean(tissues[[tiss]]$Mouse_RPKM_short[tissues[[tiss]]$Mouse_Ensembl_Gene_ID_short==gene])
+      rpkm <- mean(tissues[[tiss]]$RPKM_short[tissues[[tiss]]$Ensembl_Gene_ID_short==gene])
       gene_expression <- c(gene_expression,rpkm)
     }
     score <- tau(gene_expression)
