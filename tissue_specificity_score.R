@@ -19,7 +19,7 @@ tau <- function(rpkm){
 
 ## for human
 
-experiment_tissue <- list.files("Data/Human/") # list of all GSE..tissues.RData created with data_extraxtion.R
+experiment_tissue <- list.files("Data/Human/") # list of all GSE..tissues.RData created with data_extraction.R
 
 for (gse in experiment_tissue){
   load(paste0("Data/Human/", gse))
