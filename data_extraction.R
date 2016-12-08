@@ -1,5 +1,5 @@
 
-directory <- "C://Mimi/UNI/Master/MLS_BIOINFORMATICS/Isemestre/First_step_project_MLS/"
+directory <- "C://mmattei/UNI/Master/MLS_BIOINFORMATICS/Isemestre/First_step_project_MLS/"
 
 setwd(directory)
 
