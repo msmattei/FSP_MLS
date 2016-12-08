@@ -3,7 +3,7 @@
 ## for future analysis only the tissue specificity score calculated with the experiment with more tissues are used
 ## the better way to calculate the tissue specificity score using different experiment should be tested in the future
 
-directory <- "C://Mimi/UNI/Master/MLS_BIOINFORMATICS/Isemestre/First_step_project_MLS/"
+directory <- "C://mmattei/UNI/Master/MLS_BIOINFORMATICS/Isemestre/First_step_project_MLS/"
 setwd(directory)
 
 
